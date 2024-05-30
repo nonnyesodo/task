@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:test_task/globalwidget/export.dart';
-
 import '../widgets/new_services/export.dart';
 
 class NewServices extends StatelessWidget {
@@ -78,6 +77,7 @@ class NewServices extends StatelessWidget {
                 ),
                 DepositPercent(size: size),
                 TimeSlot(size: size),
+                SizedBox(height: size.height * 0.02),
                 const ApptextField(hinttext: '5', label: 'Available slots'),
                 SizedBox(height: size.height * 0.05),
                 const Appbutton(label: 'Save'),

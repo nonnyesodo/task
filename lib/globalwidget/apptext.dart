@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
- 
+import 'package:google_fonts/google_fonts.dart';
+
 class AppText extends StatelessWidget {
   const AppText(
       {super.key,
@@ -26,8 +27,7 @@ class AppText extends StatelessWidget {
         textAlign: textalign,
         softWrap: true,
         maxLines: maxline,
-        style: TextStyle(
-            fontFamily: 'Matter',
+        style: GoogleFonts.inter(
             fontStyle: fontStyle,
             height: height,
             fontSize: size.sp,

@@ -17,6 +17,7 @@ class TimeSlot extends StatelessWidget {
         SizedBox(height: size.height * 0.03),
         const AppText(
             text: "Time slots", size: 14, fontweight: FontWeight.w500),
+        SizedBox(height: size.width * 0.01),
         const AppText(
             text:
                 "Represents time slots your clients can pick from based upon your availability",
@@ -30,6 +31,7 @@ class TimeSlot extends StatelessWidget {
                 (index) => AppshadowContainer(
                       width: size.width * 0.2,
                       radius: size.width * 0.02,
+                      color: const Color(0XFFF0FFFD),
                       padding:
                           EdgeInsets.symmetric(vertical: size.width * 0.02),
                       border: true,
@@ -43,7 +45,7 @@ class TimeSlot extends StatelessWidget {
         AppshadowContainer(
             padding: EdgeInsets.all(size.width * 0.025),
             border: true,
-            borderColor: Appcolors.inActive,
+            borderColor: const Color(0XFFD6D6D6),
             child: const AppText(
                 text: "Select all", size: 16, fontweight: FontWeight.w500)),
         SizedBox(height: size.height * 0.02),

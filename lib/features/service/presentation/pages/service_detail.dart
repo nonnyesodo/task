@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'package:iconsax/iconsax.dart';
+import 'package:iconsax_flutter/iconsax_flutter.dart';
 import '../../../../globalwidget/export.dart';
 import '../../data/local/service_images.dart';
 import '../widgets/services_detail/export.dart';
@@ -35,6 +37,7 @@ class ServiceDetail extends StatelessWidget {
                   size: 24,
                   fontweight: FontWeight.w500),
               const AppText(
+                  color: Color(0xFF666666),
                   text:
                       'Are you a startup looking to hit the ground running with that mega idea or a junior ...',
                   size: 14),
@@ -42,32 +45,29 @@ class ServiceDetail extends StatelessWidget {
               IconwithTitleAndValue(
                   size: size,
                   title: 'Price',
-                  img: true,
-                  image: ServiceImages.moneys,
+                  icon: Iconsax.moneys_copy,
                   value: 'GHS 90.00'),
               IconwithTitleAndValue(
                   size: size,
-                  img: true,
-                  image: ServiceImages.deposit,
+                  icon: Iconsax.receipt_disscount_copy,
                   title: 'Deposit',
                   value: '40% of GHS 120 down payment'),
               IconwithTitleAndValue(
                   size: size,
-                  icon: Icons.access_time_rounded,
+                  icon: Iconsax.clock_copy,
                   title: 'Duration',
                   value: '60 minutes'),
               IconwithTitleAndValue(
+                  icon: Iconsax.calendar_tick_copy,
                   size: size,
-                  img: true,
-                  image: ServiceImages.calendartick,
                   title: 'Service type',
                   value: 'In-person meeting'),
+              SizedBox(height: size.height * 0.01),
               ServiceDetailTimeSlot(size: size),
               SizedBox(height: size.height * 0.01),
               IconwithTitleAndValue(
+                  icon: Iconsax.save_2_copy,
                   size: size,
-                  img: true,
-                  image: ServiceImages.tag,
                   title: 'Available slots',
                   value: '12'),
               SizedBox(height: size.height * 0.01),

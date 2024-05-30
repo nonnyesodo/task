@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
- import 'package:test_task/globalwidget/apptext.dart';
+import 'package:test_task/globalwidget/apptext.dart';
 
 import '../constants/appcolors.dart';
 
@@ -34,7 +34,7 @@ class ApptextField extends StatelessWidget {
                     : Appcolors.blackColor.withOpacity(0.4)),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.sp),
-                borderSide: BorderSide(color: Appcolors.inActive)),
+                borderSide: const BorderSide(color:  Color(0XFFE5E7EB))),
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(10.sp),
                 borderSide: BorderSide(color: Appcolors.inActive)),

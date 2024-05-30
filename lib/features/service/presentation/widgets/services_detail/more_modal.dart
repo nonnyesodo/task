@@ -1,9 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iconsax_flutter/iconsax_flutter.dart';
+// import 'package:iconsax/iconsax.dart';
 
 import '../../../../../constants/appcolors.dart';
 import '../../../../../globalwidget/export.dart';
-import '../../pages/service_detail.dart';
 import 'delete_dialog.dart';
 
 class MoreModalsheet extends StatelessWidget {
@@ -15,7 +16,11 @@ class MoreModalsheet extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const AppText(text: 'More', size: 16, fontweight: FontWeight.w500),
+        const AppText(
+            text: 'More',
+            size: 16,
+            color: Color(0XFF000000),
+            fontweight: FontWeight.w500),
         AppshadowContainer(
           margin: EdgeInsets.all(size.width * 0.03),
           padding: EdgeInsets.all(size.width * 0.03),
@@ -23,9 +28,9 @@ class MoreModalsheet extends StatelessWidget {
           child: Column(
             children: [
               const IconWithTitle(
-                  title: 'Share service link', icon: Icons.ios_share_outlined),
+                  title: 'Share service link', icon: Iconsax.export_1_copy),
               const IconWithTitle(
-                  icon: CupertinoIcons.pencil, title: 'Update service'),
+                  icon: Iconsax.edit_2_copy, title: 'Update service'),
               IconWithTitle(
                   showDivider: false,
                   onTap: () {
@@ -39,7 +44,7 @@ class MoreModalsheet extends StatelessWidget {
                   },
                   titleColor: Appcolors.redColor,
                   iconColor: Appcolors.redColor,
-                  icon: CupertinoIcons.delete_solid,
+                  icon: Iconsax.trash_copy,
                   title: 'Delete service'),
             ],
           ),

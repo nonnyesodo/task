@@ -24,11 +24,15 @@ class DeleteServiceDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             const AppText(
-                text: 'Delete service', size: 22, fontweight: FontWeight.w500),
+                text: 'Delete service',
+                size: 20,
+                color: Color(0XFF000000),
+                fontweight: FontWeight.w500),
             SizedBox(height: size.height * 0.01),
-            const AppText(
+            AppText(
                 textalign: TextAlign.center,
                 size: 14,
+                color: Appcolors.lightBlack,
                 text:
                     'Deleting an activity cannot be undone. Do you really want to go through with this action?'),
             SizedBox(height: size.height * 0.02),
@@ -36,7 +40,7 @@ class DeleteServiceDialog extends StatelessWidget {
             SizedBox(height: size.height * 0.02),
             Appbutton(
                 onTap: () => Navigator.pop(context),
-                buttonColor: Appcolors.inActive.withOpacity(0.3),
+                buttonColor: const Color(0xFFF1F2F3),
                 labelColor: Appcolors.blackColor,
                 label: 'Cancel')
           ],

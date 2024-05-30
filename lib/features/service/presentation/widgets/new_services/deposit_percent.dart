@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../constants/appcolors.dart';
 import '../../../../../globalwidget/export.dart';
 import '../../../data/local/service_static_repo.dart';
@@ -22,6 +21,7 @@ class DepositPercent extends StatelessWidget {
             text: "Percentage to deposit",
             size: 14,
             fontweight: FontWeight.w500),
+        SizedBox(height: size.width * 0.01),
         const AppText(
             text: "Specify percentage required for down payment", size: 12),
         SizedBox(height: size.height * 0.02),
@@ -30,6 +30,7 @@ class DepositPercent extends StatelessWidget {
             children: List.generate(
                 ServiceStaticRepo.depositPercent.length,
                 (index) => AppshadowContainer(
+                      color: const Color(0XFFF0FFFD),
                       radius: size.width * 0.02,
                       padding: EdgeInsets.symmetric(
                           vertical: size.width * 0.02,

@@ -26,14 +26,14 @@ class Appbutton extends StatelessWidget {
         onTap: onTap,
         shadowcolour: Colors.transparent,
         width: width ?? size.width,
-        height: height ?? size.height * 0.065,
+        height: height ?? size.height * 0.055,
         radius: size.width * 0.02,
         color: buttonColor ?? Appcolors.green,
         child: child ??
             AppText(
                 text: label ?? '',
                 color: labelColor ?? Appcolors.white,
-                size: 16,
+                size: 14,
                 fontweight: FontWeight.w500));
   }
 }

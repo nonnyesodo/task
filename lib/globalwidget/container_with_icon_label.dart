@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:test_task/constants/appcolors.dart';
 import 'export.dart';
 
 class ContainerWithIconAndLabel extends StatelessWidget {
@@ -24,7 +25,7 @@ class ContainerWithIconAndLabel extends StatelessWidget {
       child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
         AppText(text: label, size: 16, fontweight: FontWeight.w500),
         SizedBox(width: size.width * 0.02),
-        Icon(icon, size: 20.sp)
+        Icon(icon, size: 20.sp, color: Appcolors.blackColor)
       ]),
     );
   }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../../../../constants/appcolors.dart';
+import 'package:iconsax_flutter/iconsax_flutter.dart';
 import '../../../../../globalwidget/export.dart';
 import '../../../data/local/service_static_repo.dart';
 
@@ -17,12 +17,17 @@ class ServiceDetailTimeSlot extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Icon(Icons.access_time, size: 20.sp),
+        Icon(Iconsax.clock_copy, size: 20.sp),
         SizedBox(width: size.width * 0.02),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const AppText(text: 'Time slots', size: 12),
+            const AppText(
+              text: 'Time slots',
+              size: 12,
+              color: Color(0XFF808080),
+            ),
+            SizedBox(height: size.width * 0.02),
             SizedBox(
               width: size.width * 0.8,
               child: Wrap(
@@ -34,7 +39,7 @@ class ServiceDetailTimeSlot extends StatelessWidget {
                             radius: size.width * 0.01,
                             padding: EdgeInsets.all(size.width * 0.01),
                             width: size.width * 0.13,
-                            color: Appcolors.inActive.withOpacity(0.3),
+                            color: const Color(0XFFF1F2F3),
                             child: AppText(
                                 text: ServiceStaticRepo.timeSlot[index],
                                 size: 14),

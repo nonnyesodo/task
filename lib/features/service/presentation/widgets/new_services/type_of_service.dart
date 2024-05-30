@@ -30,9 +30,10 @@ class TypeOfServices extends StatelessWidget {
                         children: [
                           AppshadowContainer(
                               border: true,
+                              radius: size.width * 0.05,
                               borderColor: Appcolors.green,
                               child: Icon(Icons.circle,
-                                  size: 20.sp, color: Appcolors.green)),
+                                  size: 18.sp, color: Appcolors.green)),
                           SizedBox(width: size.width * 0.02),
                           AppText(
                               maxline: 2,

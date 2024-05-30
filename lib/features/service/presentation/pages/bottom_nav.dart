@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:test_task/features/service/presentation/bloc/cubit/service_cubit.dart';
 
 import '../../../../constants/appcolors.dart';
@@ -31,7 +33,7 @@ class BottomNav extends StatelessWidget {
                                 .read<ServiceCubit>()
                                 .changeBottomNav(index)
                             : () {},
-                        image: ServiceStaticRepo.bottomNav[index].image!,
+                        icon: ServiceStaticRepo.bottomNav[index].icon!,
                         title: ServiceStaticRepo.bottomNav[index].title!,
                         size: size,
                         isActive: watchHome.bottonnavIndex == index)))));
@@ -43,13 +45,13 @@ class BottomNavButtons extends StatelessWidget {
       {super.key,
       required this.size,
       this.isActive = false,
-      required this.image,
+      required this.icon,
       required this.title,
       this.onTap});
 
   final Size size;
   final bool isActive;
-  final String image;
+  final IconData icon;
   final String title;
   final Function()? onTap;
 
@@ -58,9 +60,16 @@ class BottomNavButtons extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Column(children: [
-        Image.asset(image,
-            color: isActive ? Appcolors.green : Appcolors.inActive),
-        SizedBox(width: size.width * 0.01),
+        Row(mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+           
+            Icon(icon,
+                size: 25.sp,
+                color: isActive ? Appcolors.green : Appcolors.inActive),
+           
+          ],
+        ),
+        SizedBox(height: size.width * 0.01),
         AppText(
             text: title,
             color: isActive ? Appcolors.green : Appcolors.inActive,

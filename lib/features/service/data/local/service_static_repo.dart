@@ -1,12 +1,13 @@
-import 'package:test_task/features/service/data/local/service_images.dart';
+import 'package:flutter/material.dart';
+import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 class ServiceStaticRepo {
   static List<BottomNavModel> bottomNav = const [
-    BottomNavModel(image: ServiceImages.home, title: "Home"),
-    BottomNavModel(image: ServiceImages.calendar, title: "Buukings"),
-    BottomNavModel(image: ServiceImages.community, title: "Customers"),
-    BottomNavModel(image: ServiceImages.briefcase, title: "Services"),
-    BottomNavModel(image: ServiceImages.user, title: "Profile"),
+    BottomNavModel(icon: Iconsax.home_copy, title: "Home"),
+    BottomNavModel(icon: Iconsax.calendar_1_copy, title: "Buukings"),
+    BottomNavModel(icon: Iconsax.profile_2user_copy, title: "Customers"),
+    BottomNavModel(icon: Iconsax.briefcase, title: "Services"),
+    BottomNavModel(icon: Iconsax.user_copy, title: "Profile"),
   ];
 
   static List typeOfService = [
@@ -32,9 +33,10 @@ class ServiceStaticRepo {
 }
 
 class BottomNavModel {
-  final String? title, image;
+  final String? title;
+  final IconData? icon;
   const BottomNavModel({
-    this.image,
+    this.icon,
     this.title,
   });
 }

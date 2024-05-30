@@ -5,7 +5,6 @@ import 'package:test_task/features/service/presentation/widgets/services_detail/
 
 import '../../../../../constants/appcolors.dart';
 import '../../../../../globalwidget/export.dart';
-import '../../pages/new_services.dart';
 
 class ServiceDetailAppbar extends StatelessWidget {
   const ServiceDetailAppbar({
@@ -26,7 +25,7 @@ class ServiceDetailAppbar extends StatelessWidget {
           AppshadowContainer(
               onTap: () => showModalBottomSheet(
                   context: context,
-                  backgroundColor: const Color(0xffCCCCCC),
+                  backgroundColor: const Color(0XFFF8F8F8),
                   showDragHandle: true,
                   builder: (context) {
                     return const MoreModalsheet();
@@ -34,7 +33,7 @@ class ServiceDetailAppbar extends StatelessWidget {
               border: true,
               radius: size.width * 0.02,
               padding: EdgeInsets.all(size.width * 0.01),
-              borderColor: Appcolors.inActive,
+              borderColor: const Color(0xFFF0F0F0),
               child: Icon(CupertinoIcons.ellipsis,
                   color: Appcolors.blackColor, size: 20.sp)),
         ],

@@ -37,9 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter_bloc: ^8.1.5
   flutter_screenutil: ^5.9.1
- 
+  iconsax_flutter: ^1.0.0
   bloc: ^8.1.4
   dotted_border: ^2.1.0
+  google_fonts: ^6.2.1
 
 dev_dependencies:
   flutter_test:
@@ -79,10 +80,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Matter
-      fonts:
-        - asset: asset/font/Matter-Regular.ttf
+  # fonts:
+  #   - family: Matter
+  #     fonts:
+  #       - asset: asset/font/Matter-Regular.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

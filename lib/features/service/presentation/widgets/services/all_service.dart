@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+// import 'package:iconsax/iconsax.dart';
+import 'package:iconsax_flutter/iconsax_flutter.dart';
 
 import '../../../../../config/page route/page_route.dart';
 import '../../../../../constants/appcolors.dart';
@@ -38,21 +40,23 @@ class ALLServices extends StatelessWidget {
                             size: 20,
                             fontweight: FontWeight.w500),
                         const AppText(
+                            color: Color(0xff808080),
                             text:
                                 'Are you a startup looking to hit the ground running with that mega idea or a junior ...',
                             size: 14),
                         SizedBox(height: size.height * 0.01),
                         Row(
                           children: [
-                            Image.asset(ServiceImages.moneys),
+                            Icon(Iconsax.moneys_copy,
+                                color: const Color(0xff808080), size: 25.sp),
                             SizedBox(width: size.width * 0.01),
                             const AppText(
                                 text: 'GHS 90.00',
                                 size: 16,
                                 fontweight: FontWeight.w500),
                             const Spacer(),
-                            Icon(Icons.access_time_rounded,
-                                size: 20.sp, color: Appcolors.inActive),
+                            Icon(Iconsax.clock_copy,
+                                color: const Color(0xff808080), size: 22.sp),
                             SizedBox(width: size.width * 0.01),
                             const AppText(
                                 text: '60 min',
